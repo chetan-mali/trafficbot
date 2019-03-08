@@ -1,9 +1,12 @@
 import requests
 from lxml.html import fromstring
 def get_proxies():
-    url = 'https://free-proxy-list.net/'
+    url = 'https://free-proxy-fvgfsvdfvdft/'
     response = requests.get(url)
     parser = fromstring(response.text)
+
+dafsdfvs
+
     proxies = set()
     for i in parser.xpath('//tbody/tr')[:10]:
         if i.xpath('.//td[7][contains(text(),"yes")]'):
